@@ -1,0 +1,30 @@
+{
+    "name": "vscode-trello",
+    "displayName": "vscode-trello",
+    "description": "VS Code writes and reads from Trello  board",
+    "version": "0.0.1",
+    "publisher": "ni5ni6",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello",
+        "workspaceContains:.trello"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.sayHello",
+            "title": "Hello World"
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    }
+}
